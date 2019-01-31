@@ -116,3 +116,7 @@ dmypy.json
 .pyre/
 
 .vscode/
+
+# media files for users and other stuff for dev server
+media/
+
