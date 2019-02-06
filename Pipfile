@@ -11,6 +11,7 @@ pylint = "*"
 django = "*"
 pillow = "*"
 social-auth-app-django = "*"
+sorl-thumbnail = "*"
 
 [requires]
 python_version = "3.6"
