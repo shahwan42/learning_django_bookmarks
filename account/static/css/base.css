@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Muli);
 
 body {
     margin:0;
@@ -214,6 +214,9 @@ ul.messages li a.close {
 a.like, a.follow { float:right; margin-top:-8px; }
 
 #image-list { overflow:auto; }
+#image-list::-webkit-scrollbar {
+    width: 0 !important;
+}
 #image-list .image {
     float:left;
     width:220px;
