@@ -78,7 +78,10 @@
     });
 
     // When dom is ready
-    $(document).ready(function(){ domReady(); });
+    $(document).ready(function(){
+      // check if the function has bean defined, some pages does not have it!
+      if (domReady != undefined) domReady();
+    });
   </script>
 
 </body>
