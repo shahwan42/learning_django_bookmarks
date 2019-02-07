@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['bookmarks753.serveo.net', 'mysite.com', 'localhost', '127.0.0.
 INSTALLED_APPS = [
     'account',
     'images',
+    'actions',
 
     'django.contrib.admin',
     'django.contrib.auth',
