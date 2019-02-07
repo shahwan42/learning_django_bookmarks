@@ -54,6 +54,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   {% comment %} library to handle cookies usign js {% endcomment %}
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+  {% comment %} Block conatains domReady function that gets called
+  and changes according to the correspondent view {% endcomment %}
+  {% block domready %}
+  {% endblock %}
+
   <script>
     var csrftoken = Cookies.get('csrftoken');
     function csrfSafeMethod(method) {
@@ -71,10 +77,9 @@
       }
     });
 
-    $(document).ready(function(){
-      {% block domready %}
-      {% endblock %}
-    });
+    // When dom is ready
+    $(document).ready(function(){ domReady(); });
   </script>
+
 </body>
 </html>
