@@ -116,6 +116,7 @@ dmypy.json
 .pyre/
 
 .vscode/
+.idea/
 
 # media files for users and other stuff for dev server
 media/
